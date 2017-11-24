@@ -1,0 +1,16 @@
+body {
+	background: #e6e6e6;
+}
+
+diva {
+	width: 160px;
+	height: 160px;
+	margin: 10px;
+	float: left;
+	background: #ffffff;
+	border: 2px solid #ff0000;
+}
+
+table, th, td {
+	border: 1px solid black;
+}

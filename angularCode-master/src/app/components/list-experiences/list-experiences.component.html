@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>              
+            <th>Company</th>
+            <th>Position</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Techniques</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let exp of experiences | async">
+            <th scope="row">{{i}}</th>
+            <td>{{exp.company}}</td>
+            <td>{{exp.position}}</td>
+            <td>{{exp.dateFrom.year}}--{{exp.dateFrom.month}}--{{exp.dateFrom.day}}</td>
+            <td>{{exp.dateTo.year}}--{{exp.dateTo.month}}--{{exp.dateTo.day}}</td>
+            <td>{{exp.techniques}}</td>
+            <td><a [routerLink]="['/admin/', exp.key]">Edit</a></td>
+            <td (click)="deleteExp(exp.key)">Delete</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row" *ngFor="let experience of experiences | async">
+      <pre>{{experience | json}}: </pre>
+    </div>
+  </div>
+</div>

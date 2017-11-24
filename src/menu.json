@@ -1,0 +1,40 @@
+{
+    "Indian": [
+            {
+                "name": "Palak Ponir",
+                "price": 95
+            },
+            {
+                "name": "Tikka Masala",
+                "price": 84
+            },{
+                "name": "Vitlöks-NaN",
+                "price": 41
+            }
+        ],
+    "Thai": [
+        {
+            "name": "Curry Kyckling",
+            "price": 92
+        },
+        {
+            "name": "Bambuskott",
+            "price": 14
+        },{
+            "name": "Nudelsoppa",
+            "price": 71        }
+    ],
+    "Husmanskost": [
+        {
+            "name": "Varmkorv",
+            "price": 130
+        },
+        {
+            "name": "Köttbullar",
+            "price": 143
+        },{
+            "name": "Pannkaka",
+            "price": 132        }
+    ]
+    
+}

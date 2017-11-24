@@ -1,0 +1,49 @@
+<h4>Experience Form</h4>
+<form [formGroup]="expFormGroup">
+ <div class="form-group">
+   <label class="center-block">Company
+     <input class="form-control" formControlName="company"  >
+   </label>
+   <br>
+   <label class="center-block">from
+       <div class="input-group">
+           <input class="form-control" placeholder="yyyy-mm-dd" formControlName="dateFrom"
+                  ngbDatepicker #d="ngbDatepicker">
+           <button class="input-group-addon" (click)="d.toggle()" type="button">
+             <img src="../../assets/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+           </button>
+         </div>
+   </label>
+   <label class="center-block">to
+       <div class="input-group">
+           <input class="form-control" placeholder="yyyy-mm-dd" formControlName="dateTo"
+                  ngbDatepicker #e="ngbDatepicker">
+           <button class="input-group-addon" (click)="e.toggle()" type="button">
+             <img src="../../assets/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+           </button>
+         </div>
+   </label>
+   <br>
+   <label class="center-block">Position
+     <input class="form-control" formControlName="position"  >
+   </label>
+   <br>
+   <label class="center-block">Assignments
+     <input class="form-control" formControlName="assignments"  >
+   </label>
+   <br>
+   <label class="center-block">Techniques
+     <input class="form-control" formControlName="techniques"  >
+   </label>
+   <br>
+   <button nfIf="getBool(expFormGroup.value)" class="btn btn-warning" (click)="addFormValue()">{{expFormGroup.status}}</button>
+   <button nfIf="!(getBool(expFormGroup.value))" class="btn btn-warning">Spara</button>
+   
+ </div>
+</form>
+<div class="col">
+    <!-- Display Form group object while developing, Remove when done. -->
+    <pre> formgroup value: {{expFormGroup.value | json }}</pre>
+    <pre> formgroup status: {{expFormGroup.status | json }}</pre>
+    <pre>newExp: {{ newExp | json }}</pre>
+</div>

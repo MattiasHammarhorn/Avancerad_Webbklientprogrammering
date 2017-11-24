@@ -1,0 +1,165 @@
+h3 {
+	color: rgb(93, 93, 93); font-family: Ropa Sans; font-weight: 100;
+}
+.navbar {
+	background-color: rgb(255, 255, 255);
+}
+.navbar-default {
+	height: 70px; padding-top: 10px; margin-bottom: 0px; position: relative; z-index: 1000; background-color: rgb(255, 255, 255);
+}
+.navbar-collapse {
+	background-color: rgb(255, 255, 255);
+}
+.navbar img {
+	width: 135px; margin-top: -12px; vertical-align: middle;
+}
+.navbar ul li a {
+	letter-spacing: 2px; font-family: Ropa Sans, serif;
+}
+.hero-unit {
+	top: 0px; height: 830px; padding-top: 19%; padding-right: 15%; padding-left: 19%; background-image: url("../images/back.png"); background-size: cover; background-color: rgb(238, 238, 238);
+}
+.hero-unit img {
+	width: 40%; margin-top: -100px;
+}
+.fill {
+	background-position: center; width: 100%; height: 350px; background-size: cover;
+}
+@media all and (max-width:979px) and (min-width:768px)
+{
+.hero-unit {
+	top: 0px; height: 500px; padding-top: 20%; padding-right: 0%; padding-left: 3%;
+}
+.hero-unit h1 {
+	font-size: 50px;
+}
+}
+@media all and (max-width:767px)
+{
+.hero-unit {
+	top: 0px; height: 500px; padding-top: 30%; padding-right: 0%; padding-left: 3%;
+}
+.hero-unit h1 {
+	font-size: 50px;
+}
+}
+@media all and (max-width:480px)
+{
+.hero-unit {
+	top: 0px; height: 400px; padding-top: 50%; padding-right: 0%; padding-left: 3%;
+}
+.hero-unit h1 {
+	font-size: 40px;
+}
+}
+.home-section1 {
+	padding: 120px 0px 0px; background-color: rgb(248, 248, 248);
+}
+.border-bottom {
+	width: 300px; margin-bottom: 20px; border-bottom-color: orange; border-bottom-width: 2px; border-bottom-style: solid;
+}
+.headline {
+	color: rgb(148, 148, 148); font-family: Ropa Sans; font-weight: 700; margin-bottom: 30px;
+}
+.content {
+	color: rgb(148, 148, 148); letter-spacing: 1px; font-family: Ropa Sans; margin-bottom: 40px;
+}
+.home-section1 img {
+	width: 100%;
+}
+.bottom-image {
+	background-color: rgb(248, 248, 248);
+}
+.bottom-image img {
+	width: 200px; margin-top: 70px;
+}
+.headline-text-pages {
+	color: rgb(148, 148, 148); font-family: Ropa Sans; margin-top: 80px; margin-bottom: 80px;
+}
+.headline-page {
+	background-color: rgb(248, 248, 248);
+}
+.headline-products {
+	color: rgb(148, 148, 148); font-family: Ropa Sans; font-size: 30px;
+}
+.link-products a {
+	color: rgb(221, 138, 0); letter-spacing: 1px; font-family: Ropa Sans; font-weight: 300;
+}
+.link-products a:hover {
+	color: rgb(176, 105, 0); text-decoration: none;
+}
+.more1 {
+	display: none;
+}
+.readmore1 {
+	color: rgb(221, 138, 0); letter-spacing: 1px; font-family: "Ropa Sans"; cursor: pointer;
+}
+.products {
+	background-color: rgb(248, 248, 248);
+}
+.products img {
+	width: 100%;
+}
+.products .row {
+	margin-bottom: 45px;
+}
+.products ul li {
+	color: rgb(150, 150, 150); font-family: Ropa Sans; margin-bottom: 10px;
+}
+.products ul {
+	margin-bottom: 70px;
+}
+.contact-info .headline {
+	font-size: 18px;
+}
+.headline-table {
+	border: 1px solid rgb(98, 98, 98); border-image: none; color: rgb(255, 255, 255); font-weight: 600; background-color: rgb(216, 216, 216);
+}
+.diagram table {
+	margin-bottom: 30px;
+}
+.diagram table tr td {
+	padding: 7px; width: 300px; font-family: Ropa Sans; border-bottom-color: rgb(98, 98, 98); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.about-text-text {
+	padding-top: 100px; font-size: 18px;
+}
+.about-text img {
+	width: 150px;
+}
+.about-image img {
+	width: 100%;
+}
+.contact input {
+	width: 100%; margin-bottom: 10px;
+}
+textarea {
+	width: 100%; margin-bottom: 10px;
+}
+.contact input[type=submit] {
+	border: 0px currentColor; border-image: none; width: 120px; height: 50px; color: rgb(255, 255, 255); text-transform: uppercase; background-color: rgb(221, 138, 0);
+}
+.contact-status {
+	padding: 120px 0px; background-color: rgb(248, 248, 248);
+}
+.contact-status h2 {
+	font-size: 17px; margin-top: 12%;
+}
+.contact-status a {
+	color: rgb(221, 138, 0);
+}
+.footer {
+	height: 300px; padding-top: 200px; background-image: url("../images/footer.png"); background-size: cover; background-color: rgb(248, 248, 248);
+}
+@media all and (max-width:1200px)
+{
+.footer {
+	padding: 200px 20px 400px 70px;
+}
+}
+@media all and (max-width:762px)
+{
+.footer {
+	padding: 200px 20px 400px 10px; height: 900px;
+}
+}

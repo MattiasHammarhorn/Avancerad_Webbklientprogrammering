@@ -1,0 +1,134 @@
+@import url(http://fronts.googleapis.com/css?family=Jaques+Francois);
+@import url(http://fronts.googleapis.com/css?family=Quattrocento+Sans);
+
+body {
+	background-color: #ffffff;
+	color: #000000;
+	margin: 0; /* Allt inom <body> hamnar till vänster kant */
+	padding: 0;
+}
+
+.page {
+	max-width: 640px;
+	margin: 0 auto 30px auto; /* Allt i page-klassen hamnar tillbaka mot mitten */
+}
+
+.accordion {
+	background-color: #eeeeee;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+.accordion li {
+	padding: 0;
+	list-style-type: none;
+}
+
+.accordion-control {
+	background-color: #af9d9d;
+	color: #333333;
+	display: block; /* Allt inom klassen visas upp som block-element */
+	width: 100%; /* Alla block inom klassen fylls ut till max-längden */
+	padding: 0.5em 0.5em 0.5em 0.7em; /* Allt inom klassen blir högre ner ifrån, sjunker */
+	margin: 0;
+	border: 1px; /* Den urskillda kanten runt klassen försvann */
+	border-top: 1px solid #666; /* Toppen på klassen får en svart linje */
+}
+
+.accordion-panel {
+	background-color: #eeeeee;
+	display: none; /* Allt inom klassen visas ej upp */
+}
+
+.accordion-panel p {
+	margin: 1px; /* Utrymmet upp och ner, runt <p>-elementet dras ihop */
+}
+
+.accordion-panel img {
+	display: block;
+	max-width: 640px;
+	clear: left;
+}
+
+/********** LOGO **********/
+
+.logo {
+	text-align: center; /* Allt inom klassen centreras */
+}
+
+/********** SLOGAN **********/
+
+.slogan {
+	text-align: center;
+	color: #ff0000;
+	text-transform: capitalize;
+	letter-spacing: 0.1em;
+	font-size: 300%;
+}
+
+/********** TYPOGRAPHY **********/
+
+body, button {
+	font-family: 'Jaques Francois', serif;
+}
+
+h1, h2, h3 {
+	font-weight: normal; /* Bokstäverna blir tunnare */
+	margin: 0px; /* Radavståndet blir mindre */
+}
+
+h1 {
+	text-align: center;
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	font-size: 330%;
+	line-height: 1em;
+	padding: 20px 0 0 20px;
+}
+
+h2 {
+	text-align: center;
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	font-size: 230%;
+	line-height: 1em;
+	padding: 20px 0 0 20px;
+}
+
+h3 {
+	font-size: 90%;
+	letter-spacing: 0.2em;
+}
+
+p {
+	font-family: 'Quattrocento Sans', sans-serif;
+	line-height:1.4em;
+}
+
+a { text-decoration: none; }
+
+button {
+	font-family: normal;
+	font-size: 90%;
+	text-align: center; /* Rätar till texten till att hamna i miten */
+	text-transform: uppercase;
+	line-height: 3.5em;
+}
+
+/********** NO JS **********/
+
+#billboard { text-align: center; }
+.js-warning {display: none; }
+
+.no-js .no-warning {
+	display: block;
+	border: 3px solid #fff;
+	text-align: center;
+	background-color: #fff;
+	color: #db5391;
+	padding:10px;
+}

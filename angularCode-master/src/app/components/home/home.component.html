@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row pt-5">
+    <div class="col" *ngFor="let exp of experiences | async">
+      <div >
+          <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="../../assets/abstract.jpg" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">{{exp.company}}</h4>
+                <p class="card-text">{{exp.position}}</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">{{exp.dateFrom.year}} {{exp.dateTo.year}}</li>
+                <li class="list-group-item">{{exp.assignments}}</li>
+                <li class="list-group-item">{{exp.techniques}}</li>
+              </ul>
+            </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" *ngFor="let experience of experiences | async">
+      <pre>{{experience | json}}</pre>
+      <!-- <pre>{{experience.company}}</pre> -->
+    </div>
+    <br>
+    <!-- <pre>experiences: {{ experiences| json }}</pre> -->
+    <br>
+  </div>
+</div>

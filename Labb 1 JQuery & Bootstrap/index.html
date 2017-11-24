@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="/lab1/lab1styles.css">
+    <script src="/lab1/lab1scripts.js"></script>
+    <script src="/lab1/customWidget.js"></script>
+</head>
+<body>
+	<div class="container">
+        <div class="row pt-3">
+            <div id="div-for-custom-widget" class="col droppable mx-3 text-center">
+				<p><span>ToDo</span></p>
+				<div class="ui-widget-content draggable">
+					<p>Note 1</p>
+					<div class="tabs">
+						<ul>
+							<li><a href="#tabs-1">Devs</a></li>
+							<li><a href="#tabs-2">Task</a></li>
+							<li><a href="#tabs-3">Deadline</a></li>
+						</ul>
+						<div id="tabs-1">
+							<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus.</p>
+						</div>
+						<div id="tabs-2">
+							  <p>Morbi tincidunt, dui sit amet facilisis feugiat.</p>
+						</div>
+						<div id="tabs-3">
+							<input type="text" class="datepicker">
+						</div>
+					 </div>
+				</div>
+				<div class="ui-widget-content draggable">
+					<p>Note 2</p>
+					<div class="tabs">
+						<ul>
+							<li><a href="#tabs-1">Devs</a></li>
+							<li><a href="#tabs-2">Task</a></li>
+							<li><a href="#tabs-3">Deadline</a></li>
+						</ul>
+						<div id="tabs-1">
+							<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus.</p>
+						</div>
+						<div id="tabs-2">
+							  <p>Morbi tincidunt, dui sit amet facilisis feugiat.</p>
+						</div>
+						<div id="tabs-3">
+							<input type="text" class="datepicker">
+						</div>
+					 </div>
+				</div>
+				<div  class="ui-widget-content draggable">
+					<p>Note 3</p>
+					<div class="tabs">
+						<ul>
+							<li><a href="#tabs-1">Devs</a></li>
+							<li><a href="#tabs-2">Task</a></li>
+							<li><a href="#tabs-3">Deadline</a></li>
+						</ul>
+						<div id="tabs-1">
+							<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus.</p>
+							<label></label>
+						</div>
+						<div id="tabs-2">
+							  <p>Morbi tincidunt, dui sit amet facilisis feugiat.</p>
+							  <label></label>
+						</div>
+						<div id="tabs-3">
+							<input type="text" class="datepicker">
+							<label></label>
+						</div>
+					 </div>
+				</div>
+            </div>
+			<div class="col droppable text-center">
+				<p><span>Doing: </span><span id="doing-counter">3456</span></p>
+			</div>	
+            <div class="col droppable mx-3 text-center">
+				<p><span>Done</span></p>
+			</div>
+        </div>
+	</div>
+
+	<br>
+	<br>
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+@import url(http://fronts.googleapis.com/css?family=Jaques+Francois);
+@import url(http://fronts.googleapis.com/css?family=Quattrocento+Sans);
+
+body {
+	background-color: #000000;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+
+.page {
+	max-width: 640px;
+	margin: 0 auto 30px auto;
+}
+
+.tab-list {
+	margin: 0;
+	padding: 0;
+	
+}
+
+.tab-list li {
+	display: inline-block;
+	list-style-type: none;
+	background-color: #333333;
+	border-bottom: 3px solid #e5e5e5;
+}
+
+.tab-control {
+	color: #595959;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	border: 1px;
+}
+
+.tab-list li a {
+	color: #4d4d4d;
+	display: block;
+	padding: 3px 10px 3 px;
+}
+
+.tab-list li.hover, tab-list li.active {
+	background-color: #151515;
+	border-bottom: 3px solid #e5e5e5;
+}
+
+.tab-list li a:hover, .tab-list li a:active {
+	background-color: #e5e5e5;
+	border-bottom: 3px solid #8c8c8c;
+}
+
+.tab-panel {
+	background-color: #1a1a1a;
+	color: #666666;
+	min-height: 150px;
+	overflow: auto;
+	display: none;
+}
+
+/********** LOGO **********/
+
+.logo {
+	text-align: center;
+}
+
+/********** TYPOGRAPHY **********/
+
+p {
+	text-align: center;
+	color: #ffffff;
+}
+
+h1 {
+	text-align: center;
+	color: #595959;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+}
+
+redx {
+	color: #ff0000;
+}
+
+whitex {
+	color: #ffffff;
+}

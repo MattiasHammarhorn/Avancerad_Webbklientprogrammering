@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Jacques+Francois);
+
+html {
+	background-image: url("../img/uscccp.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+body {
+	color: #eeeeee;
+}
+
+diva {
+	width: 160px;
+	height: 160px;
+	margin: 10px;
+	float: left;
+	background: black;
+	border: 2px solid red;
+}
+
+button {
+	font-family: "Jacques Francois", serif;
+	text-transform: uppercase;
+}
+
+/********** TYPOGRAPHY **********/
+
+h1 {
+	text-align: center;
+	font-family: "Jacques Francois", serif;
+	font-size: 250%;
+	color: #595959;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+redx {
+	color: #ff0000;
+}
+
+whitex {
+	color: #ffffff;
+}

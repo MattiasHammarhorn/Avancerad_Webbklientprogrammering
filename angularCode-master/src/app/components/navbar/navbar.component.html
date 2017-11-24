@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" routerLink="/">Mattias CV</a>
+    <button
+    (click)="isCollapsed = !isCollapsed"
+    [attr.aria-expanded]="!isCollapsed"
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarTogglerDemo01"
+    aria-controls="navbarTogglerDemo01"
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+    id="collapseExample"
+    [ngbCollapse]="isCollapsed"
+    class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/listexperiences">List Experiences</a>
+        </li>
+      </ul>
+    </div>
+    <button
+    (click)="authorizationCollapsed = !authorizationCollapsed"
+    [attr.aria-expanded]="!authorizationCollapsed"
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarTogglerDemo01"
+    aria-controls="navbarTogglerDemo01"
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+    id="authorization"
+    [ngbCollapse]="authorizationCollapsed"
+    class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" (click)="open(content)">Log in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="logOut()">Log out</a>
+        </li>
+        <li>
+          <a *ngIf="userObservable" class="nav-link">{{userObservable.email}}</a>
+        </li>
+      </ul>
+    </div>
+   </nav>
+   <ng-template #content let-c="close" let-d="dismiss">
+      <div class="modal-header">
+          <h4 class="modal-title">Log in</h4>
+          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="loginFormGroup">
+            <label class="center-block">Email
+              <input class="form-control" formControlName="email">
+            </label>
+            <br>
+            <label class="center-block">Password
+              <input class="form-control" type="password" formControlName="password">
+            </label>
+            <br>
+            <button class="btn btn-success"  (click)="login()">Log in</button>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+      </div>
+   </ng-template>
+   

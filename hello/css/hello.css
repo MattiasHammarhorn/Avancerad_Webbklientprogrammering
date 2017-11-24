@@ -1,0 +1,36 @@
+/* css for hello world */
+body {
+	background-color: #ffffff;
+	color: #000000;
+	margin: 0; /* texten i <body> hamnar i det vänstra hörnet */
+	padding: 0;
+}
+
+h1, h2 {
+	font-weight: normal; /* ändrar stilsnittet på texten i <h1> */
+	margin: 0; /* texten i <h1> hamnar uppe i högra hörnet */
+}
+
+h1 {
+	text-align: center; /* centrerar texten i <h1> */
+	color: #666; /* number of the beast */
+	text-transform: uppercase; /* ändrar alla bokstäver till stora */
+	letter-spacing: 0.14em; /* ökar avståndet mellan bokstäverna i <h1> */
+	font-size: 330%; /* ökar storleken på fonten i <h1> */
+	line-height: 1em; /* texten hamnar längre upp */
+	padding: 20px 0 0 20px; /* texten hamnar längre ner och åt höger */
+}
+
+h2 {
+	text-align: center;
+	color: # 666;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	font-size: 230%;
+	line-height: 1em;
+	padding: 20px 0 0 20px;
+}
+
+.center {
+	text-align: center;
+}

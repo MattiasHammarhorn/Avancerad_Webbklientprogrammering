@@ -1,0 +1,31 @@
+Application Programming Interface
+
+AJAX - Asynchronous JavaScript and XML
+= the user can continue to use the application while the client program requests information from the server in the background.
+
+add a JSON Formatter extension to your browser. Plenty of choices, search for "json formatter" and just pick one.
+
+get key. Often via signing up.
+
+my flickr key: 	
+sun16
+Key:
+657b47a907f74dc94d557dc75d48d5a4
+
+Secret:
+b149988b3d8153e0
+
+
+API methods: https://www.flickr.com/services/api/  -> find 'flickr.photos.getRecent'
+
+what are API methods?
+
+- they construct an endpoint (URL) in XML or JSON as a response to a request.
+
+https://api.flickr.com/services/feeds/photos_public.gne 
+
+add ?format=json
+
+https://www.flickr.com/services/api/flickr.photos.getRecent.html
+
+explore

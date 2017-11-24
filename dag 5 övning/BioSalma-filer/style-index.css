@@ -1,0 +1,84 @@
+html {
+	background-color: rgb(242, 242, 242);
+}
+.background-human {
+	padding: 0px; top: 0px; height: 700px; border-right-color: rgb(222, 222, 222); border-right-width: 2px; border-right-style: solid; background-color: rgb(255, 255, 255);
+}
+@media all and (max-width:995px)
+{
+.background-human {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+}
+.background-hund {
+	padding: 100px 0px; top: 0px; height: 700px; background-color: rgb(255, 255, 255);
+}
+@media all and (max-width:483px)
+{
+.background-human {
+	height: 450px;
+}
+.background-hund {
+	height: 700px;
+}
+}
+@media all and (max-width:993px)
+{
+.background-hund {
+	height: 1100px;
+}
+}
+@media all and (max-width:723px)
+{
+.background-hund {
+	height: 1000px;
+}
+}
+@media all and (max-width:505px)
+{
+.background-hund {
+	height: 600px;
+}
+}
+.logo {
+	width: 200px; margin-top: -20px; margin-bottom: 50px; margin-left: 30px;
+}
+.background-human img {
+	transition:0.8s ease-in-out; width: 63%; margin-top: 27px;
+}
+.background-human img:hover {
+	transition:0.8s ease-in-out; width: 65%;
+}
+.background-hund img {
+	transition:0.8s ease-in-out; width: 40%; margin-top: 40px;
+}
+.background-hund img:hover {
+	transition:0.8s ease-in-out; width: 50%;
+}
+.headline-index {
+	color: rgb(51, 51, 51); font-family: "Ropa Sans"; font-size: 30px;
+}
+.sub-index {
+	color: rgb(51, 51, 51); font-family: "Ropa Sans"; font-size: 25px; margin-top: 10px; margin-bottom: 10px;
+}
+.background-human .border-under-headline {
+	margin: 0px auto; width: 200px; border-bottom-color: orange; border-bottom-width: 2px; border-bottom-style: solid;
+}
+.background-hund .border-under-headline {
+	margin: 0px auto; width: 200px; border-bottom-color: rgb(44, 181, 213); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.background-human a {
+	color: rgb(209, 135, 0); letter-spacing: 1px; font-family: "Ropa Sans";
+}
+.background-human a:hover {
+	color: rgb(138, 84, 0); text-decoration: none;
+}
+.background-hund a {
+	color: rgb(36, 145, 172); letter-spacing: 1px; font-family: "Ropa Sans";
+}
+.background-hund a:hover {
+	color: rgb(33, 117, 143); text-decoration: none;
+}
+.footer {
+	height: 300px; padding-top: 200px; background-image: url("../images/footer.png"); background-size: cover; background-color: rgb(255, 255, 255);
+}

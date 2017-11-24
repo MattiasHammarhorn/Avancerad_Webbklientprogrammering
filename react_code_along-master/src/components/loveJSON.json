@@ -1,0 +1,68 @@
+{
+    "main": {
+        "beef": [
+            {
+                "name": "Ostbörjare",
+                "protein": 17,
+                "carbohydrate": 50,
+                "fat": 50,
+                "price": 30
+            },
+            {
+                "name": "Grovbörjaren",
+                "protein": 30,
+                "carbohydrate": 65,
+                "fat": 5,
+                "price": 80
+            }
+        ],
+        "pork": [
+            {
+                "name": "McSvin",
+                "protein": 8,
+                "carbohydrate": 17,
+                "fat": 75,
+                "price": 40
+            },
+            {
+                "name": "Svin-Go",
+                "protein": 17,
+                "carbohydrate": 54,
+                "fat": 22,
+                "price": 45
+            }
+        ],
+        "vegetarian": [
+            {
+                "name": "Salladsbladet",
+                "protein": 0,
+                "carbohydrate": 0,
+                "fat": 0,
+                "price": 10
+            },
+            {
+                "name": "Krisprullen",
+                "protein": 17,
+                "carbohydrate": 20,
+                "fat": 4,
+                "price": 30
+            }
+        ]
+    },
+    "beverage": [
+        {
+            "name": "Mjölkskaket",
+            "protein": 3,
+            "carbohydrate": 2,
+            "fat": 50,
+            "price": 20
+        },
+        {
+            "name": "Koka Kåla ljus",
+            "protein": 0,
+            "carbohydrate": 2,
+            "fat": 0,
+            "price": 13
+        }
+    ]
+}

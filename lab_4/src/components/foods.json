@@ -1,0 +1,39 @@
+{
+	"options": [
+		[
+		
+			"meat", [
+				{
+					"name": "Big McBurger",
+					"price": 50
+				},
+				{
+					"name": "Mad Maxburger",
+					"price": 40
+				},
+				{
+					"name": "Whooper",
+					"price": 30
+				}
+			]
+		],
+		
+		[
+			"vegetarian", [
+				{
+					"name": "McBeanie Burger",
+					"price": 50
+				},
+				{
+					"name": "Vertburger",
+					"price": 40
+				},
+				{
+					"name": "Plantburger",
+					"price": 30
+				}
+			]
+		]
+		
+	]
+}

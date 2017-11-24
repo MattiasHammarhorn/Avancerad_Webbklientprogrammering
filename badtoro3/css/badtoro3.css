@@ -1,0 +1,82 @@
+@import url(http://fronts.googleapis.com/css?family=Jaques+Francois);
+@import url(http://fronts.googleapis.com/css?family=Quattrocento+Sans);
+
+body {
+	background-color: #000000;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+
+.page {
+	max-width: 640px;
+	margin: 0 auto 30px auto;
+}
+
+.tab-list {
+	margin: 0;
+	padding: 0;
+}
+
+.tab li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.tab-control {
+	color: #595959;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: 1px;
+}
+
+.tab-control a {
+	background-color: #333333;
+	color: #4d4d4d;
+	text-transform: uppercase;
+	font-size: 100%;
+	text-decoration: none;
+	letter-spacing: 0.2em;
+	padding: 3px 10px;
+	border-bottom: 3px solid #bfbfbf;
+}
+
+.tab-control a:hover {
+	background-color: #ffffff;
+}
+
+.tab-panel {
+	background-color: #1a1a1a;
+	color: #666666;
+	overflow: auto;
+	display: none;
+}
+
+/********** LOGO **********/
+
+.logo {
+	text-align: center;
+}
+
+/********** TYPOGRAPHY **********/
+
+p {
+	text-align: center;
+	color: #ffffff;
+}
+
+h1 {
+	text-align: center;
+	color: #595959;
+	text-transform: uppercase;
+}
+
+redx {
+	color: #ff0000;
+}
+
+whitex {
+	color: #ffffff;
+}
