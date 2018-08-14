@@ -1,4 +1,4 @@
-var bigHugeThesaurus_apiKey = '28992f49813e0cdc5fc3a11b50588525';
+var bigHugeThesaurus_apiKey = '8750bb49d982e385df734b7ec72b8861';
 
 var bigHugeThesaurus_apiUrl_beginning = 'http://words.bighugelabs.com/api/2/';
 var bigHugeThesaurus_apiUrl_ending = '/json';

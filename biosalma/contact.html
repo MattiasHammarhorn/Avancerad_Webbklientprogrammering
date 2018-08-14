@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BioSalma Om Oss</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+  <div class="collapse navbar-collapse">
+	<ul class="navbar navbar-default">
+      <div class="container-fluid">
+		<div class="navbar-header">
+          <a class="navbar-brand" href="index.html"><img src="img/BioSalma.png"></a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+		  <li><a href="index.html">HEM</a></li>
+		  <li class="dropdown">
+			<a class="dropdown-toggle" role="button" data-toggle="dropdown">
+			  PRODUKTER<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+			  <li><a href="products/products-human.html">Människor</a></li>
+			  <li><a href="products/products-catanddog.html">Hund och Katt</a></li>
+			  <li><a href="products.html">Alla produkter</a></li>
+			</ul>
+		  </li>
+		  <li><a href="about.html">OM OSS</a></li>
+		  <li class="active"><a href="contact.html">KONTAKT</a></li>
+		</ul>
+	  </div>
+	</ul>
+  </div>
+  
+  <section class="contact-section1">
+    <div class="container">
+	  <div class="row">
+		<div class="col-md-12 text-center">
+		  <h1 class="headline-text-pages">Kontakta oss!</h1>
+		</div>
+	  </div>
+	</div>
+    <div class="container">
+	  <div class="row">
+	    <div class="col-md-6 col-sm-6">
+		  <p class="headline">Hör gärna av dig!</p>
+		  <br>
+		  <p class="content">Har du frågor kring något? Vi hjälper gärna till.
+			Fyll bara i formuläret här intill med namn, email
+			och ditt meddelande.</p>
+		  <br>
+		  <p class="headline">Kontaktdetaljer</p>
+		  <br>
+		  <p class="content">BioSalma fresh AB<br>Maria Prästgårdsgata 1 A<br>
+			118 52 Stockholm<br>+46-70 541 41 51</p>
+		  <br>
+		  <p class="content">Emil Oldén<br>Kvalitet- och Produktansvarig<br>+46-70 253 28 53</p>
+		  <br>
+		  <a href="mailto:info@biosalma.se">info@biosalma.se</a>
+		</div>
+		<div class="col-md-6 col-sm-6">
+		  <form id="contact-form" ng-submit="submitHiddenForm()" method="post">
+			<label>Namn:</label>
+			<br>
+		    <input type="text" id="Namn" ng-model="Namn" name="Namn">
+			<br>
+			<label>Gatuadress:</label>
+			<br>
+		    <input type="text" id="Adress" ng-model="Adress" name="Adress">
+			<br>
+			<label>Postnr/ort:</label>
+			<br>
+		    <input type="text" id="PostnrOrt" ng-model="PostnrOrt" name="PostnrOrt">
+			<br>
+			<label>Telefon bostad:</label>
+			<br>
+		    <input type="text" id="TelBostad" ng-model="TelBostad" name="TelBostad">
+			<br>
+			<label>Telefon arbete:</label>
+			<br>
+		    <input type="text" id="TelJobb" ng-model="TelJobb" name="TelJobb">
+			<br>
+			<label>Mobiltelefon:</label>
+			<br>
+		    <input type="text" id="TelMobil" ng-model="TelMobil" name="TelMobil">
+			<br>
+			<label>PASSWORD:</label>
+			<br>
+		    <input type="text" id="pass" ng-model="pass" name="pass">
+			<br>
+			<br>
+			<label>Meddelande:</label>
+			<br>
+			<textarea name="Meddelande" id="Meddelande" ng-model="Meddelande" rows="5" cols="30"></textarea>
+			<br>
+			<p><b>Vänligen välj ett ämne:</b></p>
+			<div class="radio">
+			  <label><input type="radio" ng-model="Amne" value="Människa">Människa</label>
+			</div>
+			<div class="radio">
+			  <label><input type="radio" ng-model="Amne" value="Hund och katt">Hund och katt</label>
+			</div>
+			<div class="radio">
+			  <label><input type="radio" ng-model="Amne" value="Övrigt">Övrigt</label>
+			</div>
+			<br>
+			<input type="submit" name="Skicka" value="Skicka">
+			<input type="reset" name="Rensa" value="Rensa">
+			<div id="form-messages">
+			</div>
+		  </form>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  <section>
+	<div>
+	  <textarea id="submit-form" rows="6">
+		Namn: {{Namn}}  Adress: {{Adress}}  Postnr/ort: {{PostnrOrt}} TelBostad: {{TelBostad}} TelJobb: {{TelJobb}} TelMobil: {{TelMobil}}
+		Ämne: {{Amne}}
+		Meddelande:
+		{{Meddelande}}
+	  </textarea>
+	  <div ng-model="TextArea">
+		<textarea id="hidden-form" rows="6">
+		  Namn: {{Namn}}  Adress: {{Adress}}  Postnr/ort: {{PostnrOrt}} TelBostad: {{TelBostad}} TelJobb: {{TelJobb}} TelMobil: {{TelMobil}}
+		  Ämne: {{Amne}}
+		  Meddelande:
+		  {{Meddelande}}
+		</textarea>
+	  </div>
+	</div>
+  </section>
+  
+  <section class="bottom-image">
+	<div class="container">
+	  <div class="row">
+	    <div class="col-md-12 text-center"><img src="img/stark-din-halsa.png"></div>
+	  </div>
+	</div>
+  </section>
+   
+  <section class="footer">
+    <div>
+	</div>
+  </section>
+  
+  <script>
+  var app = angular.module('myApp', []);
+  
+  app.controller('myCtrl', ['$scope', function($scope){
+	$scope.Namn = "Aloha";
+	
+	$scope.submitHiddenForm = function(){
+	  $http({
+		  method: 'POST',
+		  url: 'http://juhax.com/dotnet/kontakt3/contact_html.php',
+		  data: $scope.TextArea,
+		  headers: {'Content Type': 'application/x-www-form-urlencoded' }
+	  }).success(function(data){
+		console.log(data);
+	  })
+	  .error(function(err){
+		console.log(err);
+	  });
+	};
+	}]);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arms Race</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/game1.css">
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/game1.js"></script>
+	<script src="js/utilities.js"></script>
+  </head>
+
+  <body onload="initializePlayerElements()">
+    <h1>Arms Race</h1>
+	<div>
+	  <input type="button" onclick="resetPlayerElements()" value="Restart">
+	</div>
+	<div class="damageOutput">
+	  Damage output: 
+	</div>
+	<div class="defenceOutput">
+	  Defence output: 
+	</div>
+	<div class="Trump-field">
+	  <p id="TrumpHPDisplay"></p>
+	</div>
+	<div class="Putin-field">
+	  <p id="PutinHPDisplay"></p>
+	</div>
+  </body>
+</html>

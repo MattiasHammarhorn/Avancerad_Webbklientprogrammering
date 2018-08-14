@@ -1,0 +1,33 @@
+body {
+	background-color: #848484;
+}
+
+table {
+	float: left;
+	display: block;
+}
+
+.Trump-buttons li {
+	float: left;
+	display: block;
+}
+
+.Putin-buttons li {
+	float: left;
+	display: block;
+}
+
+/* .Abu Bakr al-Baghdadi-buttons li { */
+	/* float: left; */
+	/* display: block; */
+/* } */
+
+/* .Kim Jong-Un-buttons li { */
+	/* float: left; */
+	/* display: block; */
+/* } */
+
+/* .Ali Khameini-buttons li { */
+	/* float: left; */
+	/* display: block; */
+/* } */
